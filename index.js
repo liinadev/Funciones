@@ -91,3 +91,42 @@ function rango(inicio,fin) {
 }
  rango(20,100);
 
+  const colores = [
+    {color: "amarillo", esPrimario: true},
+    {color: "cafe", esPrimario: false}, 
+    {color: "azul", esPrimario: true},
+    {color: "aguamarina", esPrimario: false},
+    {color: "rojo", esPrimario: true},
+    {color: "verde", esPrimario:false}
+  ];
+  console.log(colores);
+
+function coloresPrimarios() {
+  let coloresFiltrados = colores.filter(color => color.esPrimario); 
+  console.log(coloresFiltrados);
+}
+
+coloresPrimarios();
+
+  const animales = [
+    {animal: "abeja", edad: 7, peso: 0.1 }, 
+    {animal: "bestia", edad: 10, peso: 6 },
+    {animal: "cocodrilo", edad: 5, peso: 15 },
+    {animal: "dinosaurio", edad: 20, peso: 13 },
+    {animal: "elefante", edad: 30, peso: 50 },
+    {animal: "foca", edad: 8, peso: 6.5 },
+    {animal: "jaguar", edad: 18, peso: 30 },
+    {animal: "hipopotamo", edad: 11, peso: 14 },
+    
+  ]
+
+  const animalesPocoPeso = animales.filter(function (animal){ 
+    return animal.peso < 20; 
+  })
+  console.log(animalesPocoPeso);
+
+  const animalesMasPeso = animales.filter(function (animal){
+    return animal.peso < 12;
+  })
+  console.log(animalesMasPeso);
+
