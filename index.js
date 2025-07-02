@@ -129,3 +129,5 @@ coloresPrimarios();
     return animal.peso < 12;
   })
   console.log(animalesMasPeso);
+
+  
