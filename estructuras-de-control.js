@@ -192,13 +192,13 @@ const trikiDiagonal = [
 
 for (let i = 0; i < trikiDiagonal.length; i++) {
    for (let j = 0; j < trikiDiagonal.length; j++) {
-       if (i === j) {
-           trikiDiagonal[i][j] = "X";
-       }
+      if (i === j) {
+         trikiDiagonal[i][j] = "X";
+      }
    }
 }
 
-console.log("triki",trikiDiagonal);
+console.log("triki", trikiDiagonal);
 
 
 
@@ -209,9 +209,9 @@ const trikiResultado = [
    ["", "x", ""],
    ["", "", "x"],
 ];
-
-console.log(trikiResultado);
-
+for (let i = 0; i < trikiResultado.length; i++) {
+   console.log(trikiResultado[i].join(" | "));
+}
 
 //////////////////////   SUDOKU   //////////////////////////////////////////////
 
@@ -222,17 +222,52 @@ const sudoku = [
    ["", "", ""],
 ];
 
-let num =  1;
+let num = 1;
 
 for (let i = 0; i < sudoku.length; i++) {
    for (let j = 0; j < sudoku[i].length; j++) {
-         sudoku[i][j] = num;
-         num ++;
-       }
+      sudoku[i][j] = num;
+      num++;
    }
+   console.log("sudoku", sudoku[i].join(" | "));
 
-console.log("sudoku",sudoku);
+}
 
 // Condición sudoku[i] = "Mientras j sea menor que la cantidad de columnas en la fila i".
 // sudoku.length nos da el número de filas que son 4.
 // sudoku[i].length nos da el número de columnas de la fila i que son 3 
+
+const cars =
+   [["BMW", "Volvo", "Saab"],
+   ["Ford", "Fiat", "Audi"],
+   ["Lambo", "Renault", "Honda"]];
+
+
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+   for (let j = 0; j < cars.length; j++) {
+      if (j = cars.length - 1) {
+         text += " " + cars[i][j];
+      }
+   }
+}
+console.log(text);
+
+const carros =
+   [["BMW", "Volvo", "Saab"],
+   ["Ford", "Fiat", "Audi"],
+   ["Lambo", "Renault", "Honda"]];
+
+
+let carro = "";
+for (let i = 0; i < carros.length; i++) {
+   for (let j = 0; j < carros.length; j++) {
+      if (i == 0 || j == carros.length - 1 || j == 0 || i == carros.length - 1) {
+         carro += " " + carros[i][j];
+      }
+   }
+   console.log(carros[i].join("|"));
+}
+
+
+// TAREA: imprimir la matriz para que se vea como una matriz 
