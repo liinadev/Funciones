@@ -2,30 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funciones</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cocktail's</title>
+  <link rel="stylesheet" href="./api.css">
+
 </head>
 
 <body>
 
-    <h2> DELICIOUS COCKTAILS </h2>
+  <header class="header">
+    <div class="logo-eslogan">
+      <img src="./logo-original.png" alt="Logo de cocteles" class="logo">
+    </div>
 
-    <h3>DRINKS:</h3>
+    <div class="mi-eslogan">
+      <h3 class="eslogan">“Mezclamos pasión, servimos emociones🍸”</h3>
+    </div>
 
-    <div id="alumno"></div>
-    <div id="estudiante"></div>
-    <div id="mascota"></div>
-    <div id="nuestrasMascotas"></div>
-    <div id="resultado"></div>
+    <div class="logo-original">
+      <img src="./brisa-nocturna.png" alt="marca" class="logotipo">
+      <div class="buscador-container">
+        <input type="text" id="buscador" placeholder="Escribe tu cóctel favorito ">
+        <button onclick="buscarCocktail()">Buscar</button>
+      </div>
+    </div>
+  </header>
 
-    <!-- <script src="./index.js"></script> -->
-    <!-- <script src="./clima.js"></script> -->
-    <!-- <script src="./index.js"></script> -->
-    <!-- <script src="./estructuras-de-control.js"></script> -->
-    <!-- <script src="./for-in.js"></script>  -->
-    <script src="./api.js"></script>
+
+  <div id="alumno"></div>
+  <div id="estudiante"></div>
+  <div id="mascota"></div>
+  <div id="nuestrasMascotas"></div>
+  <div id="resultado" class="catalogo"></div>
+
+
+
+  <!-- <script src="./index.js"></script> -->
+  <!-- <script src="./clima.js"></script> -->
+  <!-- <script src="./index.js"></script> -->
+  <!-- <script src="./estructuras-de-control.js"></script> -->
+  <!-- <script src="./for-in.js"></script>  -->
+  <script src="./api.js"></script>
+
+  <footer class="footer">
+    <img src="./brisa-nocturna.png" alt="Logo Brisa Nocturna" class="logotipo">
+    <h4> © 2025 Brisa Nocturna. Creado con orgullo en Colombia 🇨🇴 </h4>
+  </footer>
 
 </body>
 
-</html> 
+</html>
